@@ -1,9 +1,13 @@
 .nav-link {
   text-decoration: none;
   font-size: .8em;
-  color: #ffffff;
+  /* color: #ffffff;
+   */
+  color: #2E8B92;
+  font-weight: 600;
 }
 
 .current-page {
-  color: #C2C2C2
+  color: #C2C2C2;
+  font-weight: 700;
 }
