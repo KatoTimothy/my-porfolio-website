@@ -1,0 +1,24 @@
+.profile {
+  color: #222222;
+  border-bottom: 1px solid#C2C2C2;
+}
+
+#profile-photo {
+  text-align: center;
+  font-weight: 700;
+}
+
+#profile-email {
+  margin-top: 0;
+}
+
+#profile-name {
+  font-size: 1.4em;
+  margin-bottom: .5em;
+}
+
+img {
+  width: 200px;
+  border-radius: 100%;
+  border: 5px solid #2E8B92;
+}
