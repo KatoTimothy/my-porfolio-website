@@ -1,4 +1,5 @@
 import React from 'react'
+import '../css/Profile.css'
 
 function ProfilePhoto({ photo }) {
   return (

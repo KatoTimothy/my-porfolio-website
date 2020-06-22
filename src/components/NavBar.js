@@ -1,14 +1,14 @@
 import React from 'react'
 
 import NavLink from './NavLink'
-import '../css/Nav.css'
+import '../css/NavBar.css'
 
-function Nav() {
+function NavBar() {
   //stores nav_link titles
   const nav_link_titles = ["Profile", "Experience", "Education", "Portfolio"]
 
   return (
-    <nav className="nav-top">
+    <nav className="nav-bar">
       <ul className="nav-items">
         {
           nav_link_titles.map((title, index) =>
@@ -20,4 +20,4 @@ function Nav() {
   )
 }
 
-export default Nav
+export default NavBar

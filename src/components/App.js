@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Nav from './Nav'
+import NavBar from './NavBar'
 import '../css/App.css'
 import Profile from './Profile';
 import ProfilePhoto from './ProfilePhoto'
@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      <Nav />
+      <NavBar />
       <div className="container">
         <h1 id="page-title">Profile</h1>
         <ProfilePhoto photo={photo} />
