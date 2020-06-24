@@ -1,21 +1,15 @@
 import React from 'react'
+// import $ from 'jquery'
 
-import NavLink from './NavLink'
+import NavLinks from './NavLinks'
+
 import '../css/NavBar.css'
 
-function NavBar() {
-  //stores nav_link titles
-  const nav_link_titles = ["Profile", "Experience", "Education", "Portfolio"]
+const NavBar = () => {
 
   return (
     <nav className="nav-bar">
-      <ul className="nav-items">
-        {
-          nav_link_titles.map((title, index) =>
-            <NavLink key={index} title={title} />
-          )
-        }
-      </ul>
+      <NavLinks />
     </nav>
   )
 }
