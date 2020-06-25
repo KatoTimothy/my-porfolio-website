@@ -1,23 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class NavLinkItem extends Component {
-  constructor (props) {
-    super(props)
-  }
-  handleClick() {
-  }
-  render() {
-    return (
-      <li className={"list-item"} >
-        <a href="#"
-          className="nav-link"
-          key={this.props.key}
-        >
-          {this.props.title}
-        </a>
-      </li >
-    )
-  }
+const NavLinkItem = ({ page, active, onClick, category }) => {
+
+  return (
+    <li className={"list-item"} >
+      <a href="#"
+        className={active ? "current-page" : ""}
+        onClick={onClick}
+      >
+        {page}
+      </a>
+    </li >
+  )
 }
 
 export default NavLinkItem
