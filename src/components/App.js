@@ -24,7 +24,7 @@ function App() {
   const photo =
   {
     name: "Kato Timothy",
-    location: "http://localhost:3000/images/profile.jpg",
+    location: "/images/profile.jpg",
     email: "mctimkato@gmail.com",
   }
 
@@ -33,6 +33,7 @@ function App() {
       <NavBar />
       <div className="container">
         <h1 id="page-title">Profile</h1>
+
         <ProfilePhoto photo={photo} />
         {
           profile_info.map(function (info, index) {

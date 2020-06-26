@@ -37,7 +37,7 @@ class NavLinks extends Component {
         />)
     }
     return (
-      <ul className="nav-items">
+      <ul className="nav-items container">
         {navLinkItemSet}
       </ul>
     )

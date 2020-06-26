@@ -3,7 +3,7 @@ import React from 'react'
 const NavLinkItem = ({ page, active, onClick, category }) => {
 
   return (
-    <li className={"list-item"} >
+    <li className={"list-item" + category} >
       <a href="#"
         className={active ? "current-page" : ""}
         onClick={onClick}

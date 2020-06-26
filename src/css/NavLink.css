@@ -14,6 +14,7 @@ nav li>a {
    */
   color: #c2c2c2;
   font-weight: 600;
+  padding-right: 1.2em;
 }
 
 .current-page {
