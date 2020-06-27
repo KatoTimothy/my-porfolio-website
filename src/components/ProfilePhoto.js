@@ -1,15 +1,30 @@
-import React from 'react'
+import React, { Fragment, Component } from 'react'
+import PropTypes from 'prop-types'
 import '../css/Profile.css'
 
-function ProfilePhoto({ photo }) {
-  return (
-    <article className="profile" id="profile-photo">
-      <img src={photo.location} alt={photo.name} />
-      <div id="profile-info">
-        <h3 id="profile-name">{photo.name}</h3>
-        <p id="profile-email">{photo.email}</p>
-      </div>
-    </article>)
+
+class ProfilePhoto extends Component {
+
+  render() {
+    const { path, description } = this.props.photo
+
+    return (
+      <Fragment>
+        <img src={path} alt={description} />
+      </Fragment>
+    )
+  }
+}
+
+ProfilePhoto.propTypes = {
+  photo: PropTypes.shape({
+    path: PropTypes.string.isRequired,
+    description: PropTypes.string
+  }).isRequired
+}
+
+ProfilePhoto.defaultProps = {
+  description: "This is a photo of Kato Timothy."
 }
 
 export default ProfilePhoto
