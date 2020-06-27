@@ -10,10 +10,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <div className="container">
-        <h1 id="page-title">Profile</h1>
         <Profile />
-      </div>
     </div>
   )
 }
